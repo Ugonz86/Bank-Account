@@ -5,12 +5,43 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Bank Account</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Bank Account</h1>
+      <div class="row">
+        <form id="registerForm" >
+          <div class="col-md-6" id="registerAccount">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput">
+            <br>
+            <label for="initialDepositInput">Intial Deposit:</label>
+            <input type="number" id="initialDepositInput">
+            <button type="submit" class="btn btn-success" id="registerButton">Submit</button>
+          </div>
+        </form>
 
+        <form id="depositForm">
+          <div class="col-md-6" id="deposit">
+            <label for="depositInput">Deposit Amount:</label>
+            <input type="text" id="depositInput">
+            <button type="submit" class="btn btn-success" id="depositButton">Submit</button>
+        </form>
 
+        <form id="withdrawalForm">
+            <label for="withdrawalInput">Withdrawal Amount:</label>
+            <input type="text" id="withdrawalInput">
+            <button type="submit" class="btn btn-success" id="withdrawalButton">Submit</button>
+          </div>
+        </form>
+      </div>
 
+      <div class="container" id="balance">
+        <label for="balanceDisplay">Balance:</label>
+        <div class="d-inline bg-success">$<span id="balanceAmount"></span></div>
+      </div>
 
+    </div>
   </body>
 </html>
